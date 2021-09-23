@@ -20,6 +20,14 @@ services:
             - '../src/Entity/'
             - '../src/Kernel.php'
             - '../src/Tests/'
+            - '../src/TemplateUpdater/'
+            - '../src/Generator/'
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+    App\GitOperator:
+        arguments:
+            $githubUsername: '%env(GITHUB_USERNAME)%'
+            $githubToken: '%env(GITHUB_TOKEN)%'
+            $gitUserName: '%env(GIT_USER_NAME)%'
+            $gitUserEmail: '%env(GIT_USER_EMAIL)%'

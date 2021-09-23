@@ -1,0 +1,24 @@
+{
+  "name": "bricre/amazon-selling-partner-sdk-{package}",
+  "description": "API client generated from OpenAPI definition from Amazon {description}",
+  "minimum-stability": "stable",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Allan Sun",
+      "email": "allan.sun@bricre.com"
+    }
+  ],
+  "require": {
+    "allansun/openapi-runtime": "^2.1"
+  },
+  "require-dev": {
+    "allansun/openapi-code-generator": "^0.2.5",
+    "allansun/openapi-parser": "^2.1.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "{escapedNamespace}\\": "/src"
+    }
+  }
+}
